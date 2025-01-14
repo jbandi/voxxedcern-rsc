@@ -13,13 +13,42 @@ Browser Tabs:
 Projects (Screens):
 
 - API: IDE with DB Explorer & Browser
+
+  ```
+  cd 99-data/api
+  npm run start
+  ```
+
 - React SPA
   - npm run dev
+
 - React SSR
   - npm run demo
+
 - React Server
   - Add `-Server -rebuilding` to the WebDev Console Filter
 
+
+
+## DB & API
+
+- DB Explorer
+- http://localhost:4444/
+
+
+
+## React SPA
+
+- HTML Shell 
+- src/main.tsx -> createRoot
+
+
+
+## React SSR
+
+- HTML Response
+- src/entry-server.tsx -> renderToPipeableStream
+- src/entry-client.tsx -> hydrateRoot
 
 
 
