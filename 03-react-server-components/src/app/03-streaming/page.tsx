@@ -10,18 +10,26 @@ export default function Page() {
     <div className={styles.wrapper}>
       <h3>Backend Data:</h3>
       <div className={styles.column}>
-        <Suspense fallback={<Spinner />}>
-          <Backend messageId={1} />
-        </Suspense>
-        <Suspense fallback={<Spinner />}>
-          <Backend messageId={2} />
-        </Suspense>
-        <Suspense fallback={<Spinner />}>
-          <Backend messageId={3} />
-        </Suspense>
-        <Suspense fallback={<Spinner />}>
-          <Backend messageId={5} />
-        </Suspense>
+        <div>
+          <Suspense fallback={<Spinner />}>
+            <Backend messageId={1} />
+          </Suspense>
+        </div>
+        <div>
+          <Suspense fallback={<Spinner />}>
+            <Backend messageId={2} />
+          </Suspense>
+        </div>
+        <div>
+          <Suspense fallback={<Spinner />}>
+            <Backend messageId={3} />
+          </Suspense>
+        </div>
+        <div>
+          <Suspense fallback={<Spinner />}>
+            <Backend messageId={5} />
+          </Suspense>
+        </div>
       </div>
     </div>
   );

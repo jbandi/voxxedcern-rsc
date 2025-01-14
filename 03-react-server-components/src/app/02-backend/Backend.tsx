@@ -1,4 +1,5 @@
 import { readServerData } from "@/app/02-backend/serverData";
+import styles from "@/app/component.module.css";
 
 export async function Backend() {
   // const serverData = readServerData();
@@ -9,7 +10,7 @@ export async function Backend() {
   const now = new Date().toLocaleTimeString();
   console.log("Rendering Backend Component");
   return (
-    <div>
+    <div className={styles.server}>
       <h1>{serverData}</h1>
       <p>{now}</p>
     </div>

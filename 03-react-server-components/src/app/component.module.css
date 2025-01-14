@@ -3,7 +3,7 @@
     /*min-width: 350px;*/
     border: 4px dashed orangered;
     padding: 30px;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -15,10 +15,14 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    width: 100%;
 }
 
 .column > * {
-    min-height: 120px;
+    min-height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .client {
@@ -28,13 +32,20 @@
     width: 100%;
 }
 
+.server {
+    border: 4px dashed red;
+    /*margin-top: 20px;*/
+    padding: 15px;
+    width: 100%;
+}
+
 .container {
     border: 4px dashed red;
     padding: 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /*gap: 20px;*/
     align-items: center;
 }
 
@@ -49,5 +60,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-min-height: 60px;
+    min-height: 60px;
 }
