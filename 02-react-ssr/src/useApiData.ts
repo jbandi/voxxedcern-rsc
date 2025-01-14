@@ -28,7 +28,7 @@ export function suspend_hack(func: Parameters<typeof suspend>[0]): any {
   let suspendReturn = suspend(func);
   // DEMO: workaround for "global" cache in `suspend-react`, which is not made for SSR ...
   if (typeof window === 'undefined') {
-    console.log('clearing cache ...');
+    // console.log('clearing cache ...');
     clear();
   }
   return suspendReturn;

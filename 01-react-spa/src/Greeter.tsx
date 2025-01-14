@@ -13,7 +13,7 @@ export function Greeter() {
   // fetching with suspense
   // const messageText = suspend(fetchDataFromApi);
 
-  console.log("Rendering Greeter with messageText", messageText);
+  console.log(`Rendering Greeter with messageText -> '${messageText}'`);
   return (
     <div className={styles.wrapper}>
       <h2>Greeter Component</h2>
