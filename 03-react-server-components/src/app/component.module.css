@@ -1,0 +1,53 @@
+.wrapper {
+    min-height: 750px;
+    /*min-width: 350px;*/
+    border: 4px dashed orangered;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.column > * {
+    min-height: 120px;
+}
+
+.client {
+    border: 4px dashed blue;
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.container {
+    border: 4px dashed red;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.shared {
+    border: 4px dashed limegreen;
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+min-height: 60px;
+}
